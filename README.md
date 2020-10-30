@@ -1,3 +1,3 @@
 # Angular-Template
 
-Template Angular Project with Jest as testrunner and a basic directory structure
+Template Angular Project with jest as testrunner, basic dockerfile, nginx configuration and a basic directory structure
