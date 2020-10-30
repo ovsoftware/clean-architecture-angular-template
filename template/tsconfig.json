@@ -6,7 +6,8 @@
       "@pages/*": ["src/app/presentation/pages/*"],
       "@usecases/*": ["src/app/core/usecases/*"],
       "@services/*": ["src/app/data/services"],
-      "@shared/*": ["src/app/presentation/shared/*"]
+      "@shared/*": ["src/app/presentation/shared/*"],
+      "@entities/*": ["src/app/core/entities/*"]
     },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
