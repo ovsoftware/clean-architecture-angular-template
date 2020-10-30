@@ -1,0 +1,12 @@
+FROM node:13.10
+
+# Webkalkulator
+COPY ./template/package.json ./template/package-lock.json /my-app/
+
+WORKDIR /my-app
+
+RUN npm ci
+
+COPY ./template .
+
+RUN npm run ng test -- --no-watch --collect-coverage
