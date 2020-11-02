@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'variables';
+
+@media screen and (max-width: $media-breakpoint-mobile) {
+    .desktop-only {
+        display: none
+    }
+}
+    
+@media screen and (min-width: $media-breakpoint-mobile+1) {
+    .mobile-only {
+        display: none
+    }
+}

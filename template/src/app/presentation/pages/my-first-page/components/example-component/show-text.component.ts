@@ -6,7 +6,7 @@ import { Component, Input } from "@angular/core";
     styleUrls: [ 'show-text.component.scss' ]
 })
 export class ShowTextComponent {
-
+    
     @Input()
     messageText: string;
 }
