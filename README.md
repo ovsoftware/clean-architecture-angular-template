@@ -1,6 +1,6 @@
 # Angular-Template (Angular v10)
 
-This project show a possible way to structre an angular app by clean architecture principles. Also it can be used as a template for new angular applications.
+This project show a possible way to structre an angular app by [clean architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) principles. Also it can be used as a template for new angular applications.
 
 In addition this configuration uses [Jest](https://jestjs.io/) instead of jasmine for tests. Wich enables features like parallel execution of tests, generation coverage reports and removing a headless browser as dependency. 
 
@@ -20,3 +20,7 @@ Also this project includes
     * Egeplast Webkalkulator
     * OVSoftware KVN-Prototyp
 * [PrimeNG](https://www.primefaces.org/primeng/#/)
+
+## Possible Stores (State Management)
+* [Akita](https://github.com/datorama/akita) (recommendation)
+* [NgRx](https://ngrx.io/)
