@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MyFirstPageContainerComponent } from '@pages/my-first-page/my-first-page-container/my-first-page.component';
+import { MyLazyLoadedPageContainerComponent } from './my-lazy-loaded-page-container/my-lazy-loaded-page-container.component';
 
-const routes: Routes = [{ path: '', component: MyFirstPageContainerComponent }];
+const routes: Routes = [{ path: '', component: MyLazyLoadedPageContainerComponent }];
 
 @NgModule({
 	imports: [RouterModule.forChild(routes)],
