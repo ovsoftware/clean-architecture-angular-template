@@ -4,9 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MyFirstPageModule } from '@pages/my-first-page/my-first-page.module';
 import { AppRoutingModule } from './app-routing.module';
-import { DataGateway } from './core/api/data-gateway.interface';
 import { HttpBackendService } from './data/services/http-backend.service';
 import { CommonModule } from '@angular/common';
+import { DATA_GATEWAY } from './core/api/data-gateway.interface';
 
 @NgModule({
 	declarations: [
@@ -19,7 +19,7 @@ import { CommonModule } from '@angular/common';
 		CommonModule
 	],
 	providers: [
-		{ provide: DataGateway, useExisting: HttpBackendService }
+		{ provide: DATA_GATEWAY, useExisting: HttpBackendService }
 	],
 	bootstrap: [AppComponent]
 })

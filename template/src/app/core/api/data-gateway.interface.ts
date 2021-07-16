@@ -1,6 +1,8 @@
+import { InjectionToken } from '@angular/core';
 import { Observable } from 'rxjs';
 
-// use abstract class instead of interface for dependency injection
-export abstract class DataGateway {
+export const DATA_GATEWAY = new InjectionToken<DataGateway>('DataGateway');
+
+export interface DataGateway {
     getMessage: () => Observable<string>;
 }
