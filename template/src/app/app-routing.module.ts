@@ -7,7 +7,8 @@ const routes: Routes = [
     {
         path: '',
         component: MyFirstPageContainerComponent
-    }
+    },
+    { path: 'my-lazy-loaded-page', loadChildren: () => import('./presentation/pages/my-lazy-loaded-page/my-lazy-loaded-page.module').then(m => m.MyLazyLoadedPageModule) }
 ];
 
 @NgModule({
