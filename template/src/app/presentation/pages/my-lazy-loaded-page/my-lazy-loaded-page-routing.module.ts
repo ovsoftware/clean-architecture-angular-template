@@ -5,7 +5,7 @@ import { MyFirstPageContainerComponent } from '@pages/my-first-page/my-first-pag
 const routes: Routes = [{ path: '', component: MyFirstPageContainerComponent }];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+	imports: [RouterModule.forChild(routes)],
+	exports: [RouterModule]
 })
 export class MyLazyLoadedPageRoutingModule { }

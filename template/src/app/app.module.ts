@@ -9,18 +9,18 @@ import { HttpBackendService } from './data/services/http-backend.service';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    MyFirstPageModule,
-    CommonModule
-  ],
-  providers: [
-    { provide: DataGateway, useExisting: HttpBackendService }
-  ],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent
+	],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		MyFirstPageModule,
+		CommonModule
+	],
+	providers: [
+		{ provide: DataGateway, useExisting: HttpBackendService }
+	],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }

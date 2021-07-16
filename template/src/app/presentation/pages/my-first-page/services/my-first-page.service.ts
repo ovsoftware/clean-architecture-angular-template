@@ -3,9 +3,9 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class MyFirstPageService {
 
-  constructor() { }
+	constructor() { }
 
-  getMessage(): string {
-    return "Hello, I'm MyFirstPageService";
-  }
+	getMessage(): string {
+		return 'Hello, I\'m MyFirstPageService';
+	}
 }

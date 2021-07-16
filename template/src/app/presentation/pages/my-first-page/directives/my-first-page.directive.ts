@@ -1,10 +1,8 @@
 import { Directive } from '@angular/core';
 
 @Directive({
-  selector: '[appMyFirstPage]'
+	selector: '[appMyFirstPage]'
 })
 export class MyFirstPageDirective {
-
-  constructor() { }
 
 }

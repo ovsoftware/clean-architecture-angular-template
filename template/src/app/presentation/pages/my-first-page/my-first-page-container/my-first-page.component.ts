@@ -1,10 +1,10 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
 import { GetMessageUsecase } from '@usecases/get-message-usecase';
 import { MyFirstPageService } from '../services/my-first-page.service';
 
 @Component({
-    templateUrl: './my-first-page.component.html',
-    styleUrls: ['./my-first-page.component.scss']
+	templateUrl: './my-first-page.component.html',
+	styleUrls: ['./my-first-page.component.scss']
 })
 export class MyFirstPageContainerComponent implements OnInit {
 
@@ -13,6 +13,6 @@ export class MyFirstPageContainerComponent implements OnInit {
     constructor(private getMessageUsecase: GetMessageUsecase, private myFirstPageService: MyFirstPageService) {}
 
     ngOnInit() {
-        this.getMessageUsecase.exec().subscribe(m => this.greetingText = m.content);
+    	this.getMessageUsecase.exec().subscribe(m => this.greetingText = m.content);
     }
 }

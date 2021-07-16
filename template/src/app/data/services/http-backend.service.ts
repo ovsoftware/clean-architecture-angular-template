@@ -3,11 +3,11 @@ import { Observable, of } from 'rxjs';
 import { DataGateway } from 'src/app/core/api/data-gateway.interface';
 
 @Injectable({
-    providedIn: 'root'
+	providedIn: 'root'
 })
 export class HttpBackendService implements DataGateway {
-    getMessage(): Observable<string> {
-        return of('Hello Message');
-    }
+	getMessage(): Observable<string> {
+		return of('Hello Message');
+	}
 
 }

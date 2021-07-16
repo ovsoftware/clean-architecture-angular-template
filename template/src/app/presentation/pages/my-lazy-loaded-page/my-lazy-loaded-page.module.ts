@@ -5,11 +5,11 @@ import { MyLazyLoadedPageRoutingModule } from './my-lazy-loaded-page-routing.mod
 
 
 @NgModule({
-  declarations: [
-  ],
-  imports: [
-    CommonModule,
-    MyLazyLoadedPageRoutingModule
-  ]
+	declarations: [
+	],
+	imports: [
+		CommonModule,
+		MyLazyLoadedPageRoutingModule
+	]
 })
 export class MyLazyLoadedPageModule { }

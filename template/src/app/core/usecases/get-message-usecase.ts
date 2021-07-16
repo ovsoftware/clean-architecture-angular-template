@@ -5,20 +5,20 @@ import { DataGateway } from '../api/data-gateway.interface';
 import { Message } from '../entities/message';
 
 @Injectable({
-    providedIn: 'root'
+	providedIn: 'root'
 })
 export class GetMessageUsecase {
 
-    constructor(private dataGateway: DataGateway) {}
+	constructor(private dataGateway: DataGateway) {}
 
-    exec(): Observable<Message> {
-        return this.dataGateway.getMessage()
-            .pipe(
-                map(m => {
-                    return {
-                        content: m
-                    }
-                })
-            );
-    }
+	exec(): Observable<Message> {
+		return this.dataGateway.getMessage()
+			.pipe(
+				map(m => {
+					return {
+						content: m
+					};
+				})
+			);
+	}
 }

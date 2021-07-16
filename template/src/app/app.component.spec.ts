@@ -6,25 +6,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
-      imports: [
-        BrowserModule,
-        AppRoutingModule,
-        MyFirstPageModule,
-        RouterTestingModule
-      ],
-      providers: []
-    }).compileComponents();
-  }));
+	beforeEach(waitForAsync(() => {
+		TestBed.configureTestingModule({
+			declarations: [
+				AppComponent
+			],
+			imports: [
+				BrowserModule,
+				AppRoutingModule,
+				MyFirstPageModule,
+				RouterTestingModule
+			],
+			providers: []
+		}).compileComponents();
+	}));
 
-  it('should create app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+	it('should create app', () => {
+		const fixture = TestBed.createComponent(AppComponent);
+		const app = fixture.componentInstance;
+		expect(app).toBeTruthy();
 
-  });
+	});
 });
