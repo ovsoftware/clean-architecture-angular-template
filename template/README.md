@@ -1,6 +1,7 @@
 # Template
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.11.
+Now updated to v12.1.2.
 
 ## Development server
 
